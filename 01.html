@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>第1章 生物科学 - Document Analysis</title>
+<style>
+        body {
+            font-family: "Helvetica Neue", Arial, "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .pdf-page {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .page-meta {
+            font-size: 0.8em;
+            color: #888;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+        h1 { font-size: 2em; color: #2c3e50; margin-bottom: 0.5em; }
+        h2 { font-size: 1.5em; color: #34495e; margin-top: 20px; }
+        h3 { font-size: 1.2em; color: #7f8c8d; margin-top: 15px; }
+        h4 { font-size: 1.1em; color: #2c3e50; font-weight: bold; margin-top: 10px;}
+        p { margin-bottom: 1em; text-align: justify; }
+        ul, ol { margin-bottom: 1em; padding-left: 20px; }
+        li { margin-bottom: 0.5em; }
+        .sidebar {
+            background: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+        }
+        .image-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-weight: bold;
+            font-size: 0.9em;
+            margin: 20px 0;
+            border: 2px solid red; 
+            background: #f0f0f0;
+        }
+        .caption {
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+            margin-top: -15px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .quote-box {
+            font-family: "Georgia", serif;
+            font-style: italic;
+            background: #fff8e1;
+            padding: 15px;
+            border-left: 4px solid #f1c40f;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+<!-- Page 1 -->
+<section class="pdf-page" id="page-1">
+<div class="page-meta">Page 1</div>
+<h1>第 1 篇 生命的起源</h1>
+<h2>揭开壁虎抵抗重力的奥秘</h2>
+<p>科学最为有趣的时候，是当它引起你遐想的时候，尤其是当你的经验常识令你无法相信你眼前所见的时候，更是如此。试想一下，你躺在一家热带旅馆的房间里，一只牙刷般大小的蓝色壁虎，沿着你身边的墙壁爬到天花板上，在你的头顶正上方停下来看着你，不一会又沿着另一面墙匆匆地爬走了。</p>
+<p>你刚才所想像的丝毫没有任何异常，壁虎正是以其飞檐走壁的绝技而闻名。但是你有没有想过它是怎样来完成这么精彩的表演的呢？事实上，几十年来研究者们一直对壁虎的附着能力迷惑不解：究竟是什么力量使壁虎克服了重力而不掉到你的鼻子上呢？</p>
+<p>最合理的解释是存在吸附力的缘故。蝾螈能够爬墙是因为它们的足能形成吸盘，壁虎也许也是利用这种方法。检测的办法是看它们的足能否在没有空气的真空条件下产生吸附力。试验结果表明蝾螈的足不行，但是壁虎的足可以，这说明壁虎不是依靠吸附作用的。</p>
+<p>会不会是摩擦力呢？蟑螂的足上有很多小钩子，就像攀岩者用的鞋钉一样，蟑螂利用这些钩子以此抓住物体表面的凹凸处爬行。而壁虎却可以在摩擦绝对爬不上去的抛光玻璃面上如履平地，所以也不是摩擦力的缘故。</p>
+<p>是不是静电引力？烘干机里的衣物粘在一起是因为它们在互相摩擦的时候带上了电荷。可以通过加入一些除静电的东西来消除这种现象，比如说强离子化的不粘层。可是壁虎的足在离子化的空气里也能够附着，那么也可以排除静电引力。</p>
+<img alt="Image Region: Gecko on Surface" src="01/01_P1_1.jpg" style="height: 300px; width: 100%; aspect-ratio: 16/9;"/>
+<p class="caption">挑战重力 这只壁虎既能爬墙，又能倒着爬过天花板。研究壁虎这种绝技的奥秘正是实验科学的迷人之处。</p>
+<p>循着这条线索，俄勒冈州 (Oregon) 波特兰市 (Portland) 刘易斯和克拉克学院 (Lewis &amp; Clark College) 的凯拉·奥特穆 (Kellar Autumn) 和加州大学伯克利分校 (University of California, Berkley) 的罗伯特·福尔 (Robert Full) 对壁虎的足进行了仔细观察。它的足底有一排排细小的绒毛，叫做刚毛，就好像某些时髦牙刷的毛一样。在显微镜下观察时，你会发现每根刚毛的末端分发出 400~1000 个尖锐的突起，叫做匙突 (spatulae)。每只足上有超过 50 万根刚毛，每根刚毛只有头发直径的十分之一粗细。</p>
+<p>Autumn 和 Full 组成了一个跨学科的科学家小组，开始着手测量每一根刚毛到底能产生多大的力。为此，他们必须接受两个来自实验的重大挑战：</p>
+<p><strong>(1) 单根刚毛的分离</strong> 以前还从未有人分离过单根的刚毛，而他们却成功地在显微镜下通过外科手术方法从壁虎的足上拔下一根刚毛，并将其绑在一根微探针上，微探针装在一个可以随意移动刚毛的微控制器上。</p>
+<p><strong>(2) 极弱作用力的测量</strong> 以前的实验表明，要托起一只壁虎，它每只足的附着力大约是 10 N，也就是能支撑 1kg 左右的质量，每只足上大约有 50 万根刚毛，可以推测出每一根刚毛可以产生约 20 μN 的力，这个力对于测量来说是太小了。为了完成测量，Autumn 和 Full 从斯坦福大学找来了一位机械工程师托马斯·肯尼 (Thomas Kenny)，他是设计测量原子级作用力仪器的专家。</p>
+</section>
+<!-- Page 2 -->
+<section class="pdf-page" id="page-2">
+<div class="page-meta">Page 2</div>
+<h3>实验过程</h3>
+<p>当研究组分离了单根的刚毛，准备把它放置在肯尼的装置上时，“我们碰到了一个意想不到的难题！”奥特穆说。在随后的两个月里，工作组试图把刚毛粘到传感器的表面，可是它根本就不粘！</p>
+<img alt="Chart: Force vs Time" src="01/01_P2_1.jpg" style="height: 250px; width: 45%; float: left; margin-right: 5%;"/>
+<img alt="Image Region: Gecko Foot Microstructure" src="01/01_P2_2.jpg" style="height: 250px; width: 45%; float: right;"/>
+<div style="clear: both;"></div>
+<p class="caption" style="text-align: left; width: 45%; float: left; margin-right: 5%;"><strong>滑步实验</strong> 用于测量每根刚毛的附着力。</p>
+<p class="caption" style="text-align: left; width: 45%; float: right;"><strong>近观壁虎的足</strong> 壁虎足上的刚毛排列成行。</p>
+<div style="clear: both;"></div>
+<p>工作组不得不停下来思考，最后他们发现了原因。壁虎爬行时不是像我们走路那样把足踩下去。事实上，当壁虎迈出一步的时候，先是足掌踩到表面上，然后伸展足趾，并在表面上向后滑动，推动刚毛的一侧与表面接触。</p>
+<p>他们重新设计了实验，这一次是让刚毛斜着从一侧来接触传感器表面，而不是从正面接触，这使得刚毛顶端的许多匙突得以与接触面充分接触。</p>
+<h3>实验结果</h3>
+<p>将刚毛放在合适的位置，实验获得了意想不到的结果。利用仪器所测得的附着力是以前测量结果的 600 倍。每根单独的刚毛所产生的力是 200 μN，远远大于依据整只足所推测的值 (20 μN)。根据多次测量结果，单根刚毛的平均附着力为 194 ± 25 μN。</p>
+<p>换个角度思考，如果壁虎的足能粘得那么结实，它又是怎么把它抬起的呢？研究小组用另一种微型仪器对没有附着的单根刚毛进行了研究。该仪器是由同样来自加州大学伯克利分校的工程师罗纳德·费尔林 (Ronald Fearing) 发明的，它能够从各种不同的方向扭曲刚毛。他们发现，如果刚毛超过一个临界角度 (30°)，刚毛和表面之间的力就基本消失了。壁虎移动脚步前，先把足蜷缩，再从表面移开，其中的诀窍就是使刚毛倾斜，作用力消失就像我们撕胶条一样。</p>
+<p>壁虎足上的强大附着力来源于什么？实验并没有揭示这吸附力是什么，但看上去似乎涉及原子水平的相互作用。壁虎的足紧贴在墙上，每根刚毛顶端数以百计的匙突必须直接和表面接触，使每个匙突上的每个原子都能参与相互作用。当两个原子靠得很近的时候——接近到比原子直径还小的距离，一种微妙的核引力——范德华力 (Van der Waals force)，就开始起作用了。这种力单独作用时十分微弱，但如果很多叠加在一起的话，合力就很大了。</p>
+<p>可不可以设计足上有人工刚毛的机器人，使它们能够爬墙呢？奥特穆和福尔已经着手和相关的机器人自动化公司一起寻找答案了。有时候科学并不仅仅是娱乐，它也会带来巨大的进步。</p>
+<div class="sidebar">
+<p>欲更详细地了解这个实验，查询虚拟实验室：<br/>www.mhhe.com/raven6/vlab1.mhtml</p>
+</div>
+</section>
+<!-- Page 3 -->
+<section class="pdf-page" id="page-3">
+<div class="page-meta">Page 3</div>
+<h1>第 1 章 生物科学</h1>
+<div class="sidebar">
+<h3>要点概述</h3>
+<p><strong>1.1 生物学是生命的科学</strong></p>
+<p><strong>1.1.1 生命的属性</strong> 生物学是一门研究生活的有机体以及有机体之间、有机体和环境之间关系的科学。</p>
+<p><strong>1.2 科学家在观察中总结和概括</strong></p>
+<p><strong>1.2.1 科学的本质</strong> 科学既需要演绎推理，也需要归纳推理。</p>
+<p><strong>1.2.2 科学研究工作是如何进行的</strong> 科学家以系统化收集的客观数据为基础提出假设，然后再设计实验来反证这些假说。</p>
+<p><strong>1.2.3 生物学家如何工作</strong></p>
+<p><strong>1.3 达尔文研究并提出进化论的过程是科学研究的经典案例</strong></p>
+<p><strong>1.3.1 达尔文的进化论</strong> 环球航行中进行的观察，使达尔文逐渐建立了由自然选择导致进化的假说。</p>
+<p><strong>1.3.2 达尔文的证据</strong> 化石和生物的地理分布使达尔文确信进化过程的存在。</p>
+</div>
+<img alt="Image Region: HMS Beagle Ship Model" src="01/01_P3_1.jpg" style="height: 400px; width: 100%; aspect-ratio: 4/3;"/>
+<p class="caption"><strong>图 1.1 贝格尔号的复制品从南美的南海岸离港</strong> 1831 年，22 岁的著名英国博物学家查尔斯·达尔文乘 H.M.S. 贝格尔号出发。</p>
+<p>你即将开始一次航程——一次探寻生命本质的航程。早在 180 年前，一位年轻的英国博物学家查尔斯·达尔文 (Charles Darwin) 搭乘 H.M.S. 贝格尔号进行了一次类似的航行（图 1.1 展示了贝格尔号的复制品）。这次长达 5 年的航行，直接促使达尔文提出了自然选择进化理论，这个理论已经成为现代生物科学的核心。生物学是研究生物体及其发展进化规律的学科，因此，以达尔文的航行作为我们探索生物学奥秘的起点颇为恰当。不过在开始之前，让我们先用一点时间来想一想生物学是什么，它为什么如此重要。</p>
+</section>
+<!-- Page 4 -->
+<section class="pdf-page" id="page-4">
+<div class="page-meta">Page 4</div>
+<h2>1.1 生物学是生命的科学</h2>
+<h3>1.1.1 生命的属性</h3>
+<p>按照最广义的概念来说，生物学是研究活着的东西的科学——也就是生命的科学。生命的形态与组成多种多样，生物学家也以各种各样的方法来研究这些生命。他们和大猩猩一起生活，收集化石，倾听鲸鱼的声音；他们分离病毒，种植蘑菇，也研究果蝇的结构；他们从长长的遗传大分子中解读信息，甚至计算蜂鸟的翅膀每秒钟扇动多少下。</p>
+<p>是什么东西赋予各种有机体“生命力”？谁都知道一匹飞奔的马是有生命的，而汽车没有，为什么？我们不能说“能动的东西就是有生命的”，因为汽车可以跑，明胶会在碗中摇摆，它们当然都不是有生命的。什么样的特征能够定义生命呢？所有生命体都具有以下 5 个基本属性：</p>
+<ol>
+<li><strong>有序性 (order)</strong>：所有的有机体由一个或多个细胞组成。细胞具有高度有序的结构：原子组成分子，分子构成了细胞内的细胞器。在多细胞生物体内以及生物群体之内，依然存在着更高水平的多层次的有序结构（图 1.2）。</li>
+<li><strong>应激性 (sensitivity)</strong>：所有的生物体都会对刺激产生反应，如植物会朝向有光的方向生长，当你走进黑暗的房间时，你的瞳孔会扩张。</li>
+<li><strong>生长、发育和繁殖 (growth, development, and reproduction)</strong>：所有的生物都具有生长和繁殖的能力，它们具有能够传递给后代的遗传物质，以保证它们的后代和它们是同一个物种。虽然晶体也可以“生长”，但它们的生长与遗传物质无关。</li>
+<li><strong>调节 (regulation)</strong>：所有的生物体都具有协调其内部功能的调节机制，这些功能包括向细胞提供养料，在机体内运输各种物质等。</li>
+<li><strong>自稳态 (homeostasis)</strong>：所有的生物体都有着相对恒定的内环境，而区别于它们所在的外环境，这个过程叫做自稳态。</li>
+</ol>
+<div class="sidebar">
+<p>所有的生物体都具有共同的属性：有序性，应激性，生长、发育和繁殖，调节以及自稳态。</p>
+</div>
+<img alt="Image Region: Cellular Levels (Cell, Organelle, Macromolecule, Molecule)" src="01/01_P4_1.jpg" style="height: 600px; width: 40%; float: right; margin-left: 20px;"/>
+<div style="clear: both;"></div>
+<p class="caption" style="text-align: right;"><strong>图 1.2 生物体内的多层次有序结构</strong> 生命是高度有序的——从小而简单的到大而复杂的，无论是细胞内，多细胞生物个体内容，还是生物群体内都是如此。</p>
+</section>
+<!-- Page 5 -->
+<section class="pdf-page" id="page-5">
+<div class="page-meta">Page 5</div>
+<img alt="Image Region: Hierarchy of Biological Organization (Tissue -&gt; Organ -&gt; System -&gt; Organism -&gt; Population -&gt; Community -&gt; Ecosystem)" src="01/01_P5_1.jpg" style="height: 800px; width: 100%; aspect-ratio: 3/4;"/>
+<p class="caption" style="text-align: center;"><strong>图 1.2 (续) 多细胞生物个体内部层次 / 生物群体内部层次</strong></p>
+</section>
+<!-- Page 6 -->
+<section class="pdf-page" id="page-6">
+<div class="page-meta">Page 6</div>
+<h2>1.2 科学家在观察中总结和概括</h2>
+<h3>1.2.1 科学的本质</h3>
+<p>生物学是一门既迷人又重要的学科，因为它将对我们的日常生活和未来产生深刻的影响。许多生物学家研究的问题与我们的生活休戚相关，比如快速增长的世界人口以及像癌症和艾滋病 (AIDS) 之类的疾病。这些生物学家积累的知识为我们提供理论基础，让我们有能力以合理的方式利用资源，预防和治疗疾病，提高我们自己以及子孙后代的生活质量。</p>
+<p>自然科学的任务，是解释世界是什么样子的，而生物学是最成功的“自然科学”之一。要理解生物学，首先要理解科学的本质。科学家的基本工具是思考，所以要想理解科学的本质，用一点时间来关注一下科学家们如何思考会对我们有所帮助。我们有两种推理的方式：演绎法和归纳法。</p>
+<h4>1) 演绎推理</h4>
+<p>演绎推理 (deductive reasoning) 是一种利用普遍法则来推测特定结果的思维方法。2200 多年以前，古希腊人埃拉托色尼 (Eratosthenes)（公元前 3 世纪的希腊天文学家、数学家和地理学家。校者注）用演绎法正确地估算出了地球的周长。在一年里白昼最长的那天正午，当阳光射进埃及 Syene 城内的深井底，埃拉托色尼测量了它正北方向 800 km 处，亚历山大城内一座方尖碑投下的影子的长度。因为已知两座城之间的距离和方尖碑的高度，他运用欧几里何的基本原理就能正确地推算出地球的周长（图 1.3）。像这样用普遍规律来分析特定情况就是演绎推理的例子。这是数学和哲学的推理，用来检验各个知识领域中普遍观点的正确性。普遍法则建立起来，并成为检验各种具体情况的基础。</p>
+<img alt="Image Region: Eratosthenes Calculation Diagram" src="01/01_P6_1.jpg" style="height: 300px; width: 40%; float: right; margin-left: 20px;"/>
+<div style="clear: both;"></div>
+<p class="caption" style="text-align: right;"><strong>图 1.3 演绎法：埃拉托色尼是怎样通过演绎法来估算地球周长的</strong></p>
+<h4>2) 归纳推理</h4>
+<p>归纳推理 (inductive reasoning) 是一种通过观察特定对象来建立普遍适用的科学理论的思维方法。韦氏大辞典将科学定义为“由观察以及旨在推定事物普遍规律的实验所得出的系统化知识”。换句话说，科学家对具体情况进行仔细观察和分析，并从中总结出普遍规律。</p>
+<p>科学是一种认识世界的方法，它通过研究客观信息从而建立对世界的认识。</p>
+<h3>1.2.2 科学研究工作是如何进行的</h3>
+<p>科学家是怎样确定众多的理论中哪些是对的，哪些是错的呢？通常他们会通过系统化检验各个理论来进行筛选：如果理论被证实与实验观察不相符，就作为错误而被否决。</p>
+</section>
+<!-- Page 7 -->
+<section class="pdf-page" id="page-7">
+<div class="page-meta">Page 7</div>
+<p>一般而言，科学家在对某科学领域进行了细致入微的观察后会提出假设 (hypothesis)，作为对观察结果的暂时解释。假设是一个有可能为真的命题，那些没有被证实为错误的假设将被保留，因为它们和已知的结果相符。所以可以暂时认为是正确的，但是他们将要不停地接受新知识的检验，一旦与观察不符就会被淘汰或修正。</p>
+<h4>1) 检验假设</h4>
+<p>我们可以将这些对假设的检验称为实验 (experiment) (图 1.4)。设想有一间黑漆漆的房间，为了了解它为什么那么暗，你可以提出几种假设，比如“因为没开灯，所以屋子里没有光”，也可能是“因为灯泡坏了，所以屋子里没有光”，甚至还有第三种可能是“我自己什么都看不见了”。要评估这些假设是对是错，你需要用实验来排除它们当中的一个或者几个。例如，你可以试试灯的开关——如果还不亮的话，第一个假设就是错的，那么一定是开关以外的其他原因导致了黑暗。要注意的是，这种检验办法并不能证明任何假设是正确的，它只能指出哪个是错误的。一个成功的实验在于它能证明一个或几个相反的假设与真实结果不符而将它们排除掉。</p>
+<h4>2) 设计对照</h4>
+<p>很多时候，我们感兴趣的过程受许多因素或者说变量 (variable) 的影响。要想估计某一变量的影响，就需要固定其他的变量。通常都是设计一组平行的实验来实验：在第一个实验里，利用某种方法来改变该变量以检验某一个假说；在第二个实验，即对照实验 (control) 中，该变量则保持不变，其他的实验条件都完全相同。这样，实验结果的任何差异都可以认为是由于该变量的改变而产生的。实验科学一个相当重要的任务就是设计合适的对照实验，以便于从影响某过程的众多因素中分离出特定的变量。</p>
+<img alt="Diagram: Scientific Method Flowchart (Observation -&gt; Question -&gt; Hypothesis -&gt; Experiment...)" src="01/01_P7_1.jpg" style="height: 400px; width: 100%; aspect-ratio: 16/9;"/>
+<p class="caption"><strong>图 1.4 科学研究是如何完成的</strong> 这张图说明了科学研究的过程。首先，科学家进行观察并提出疑问，同时对这些问题提出一些可能的解释（假设）。然后，他们通过实验来排除其中的一个或几个假设。接着，以剩下的假设为基础做出推测，并实施下一步实验来检验这些推测的真伪。经过这一过程，人们可选出最具可能性的假设。</p>
+</section>
+<!-- Page 8 -->
+<section class="pdf-page" id="page-8">
+<div class="page-meta">Page 8</div>
+<h4>3) 运用预测</h4>
+<p>一个成功的科学假设不仅要有理有据，还要有用——它必须能告诉你一些你想要知道的东西。假设有用之处在于它能够预测，同时预测也为检验假设的真伪提供了方法。如果实验结果与预测的不符，这个假设就必须抛弃；反过来，如果实验结果与预言相符，假设也就得到了支持。</p>
+<h4>4) 创立学说</h4>
+<p>在科学界，“学说” (theory) 这个词有两种解释。它可以是对某种自然现象提出的解释，通常以一些基本原则为基础，如牛顿首先提出的“万有引力学说”。这些学说经常是把一些以前看起来毫不相关的概念联系起来，并对不同的现象给出一统一的解释。牛顿的万有引力学说不仅解释了苹果为什么会掉到地上，同时也解释了行星环绕太阳轨道的形状。“学说”也可以是一整套相互关联的概念，经过科学论证和实验检验，解释了某研究领域的客观事实。这些学说为建立知识体系构筑了不可缺少的框架。举个例子，物理中的量子理论综合了一整套有关宇宙本质的观点，解释了有关实验现象，并且为进一步的研究和实验提供了指导。</p>
+<p>对科学家来说，学说是科学的坚实基础，是最为肯定的东西。而对于大众来说，学说的含义却恰恰相反——它意味着知识的缺乏和猜测。可以想像，这种理解上的差异会导致混乱。而在本书中，我们将一直用学说的科学含义，即它是已被接受的基本规则或知识体系。</p>
+<div class="sidebar">
+<p><strong>5) 科学研究与科学方法</strong></p>
+<p>“科学方法”一度非常时髦，它被认为是一系列“非此即彼”的逻辑步骤。每一步都能从两种选择中去掉不合逻辑的一种，仿佛它总是能把人带出那阻碍科学前进的迷雾。如果真是这样的话，一台计算机就能成为一名杰出的科学家，然而科学工作并不是那样做的。正如英国哲学家 Karl Popper 所指出的，“成功的科学家无一例外地在设计实验的时候就已经对实验的结果有所预测了”。他们有 Popper 所谓的对真实结果的“想像力和预见力”。一位成功的科学家所检验的假设并非是随意提出的一个假说，相反它是基于训练有素的直觉所提出的。</p>
+<p>科学研究的过程就是不断地否定那些与实验结果或观察不相符合的假说的过程。与已有的数据相符合的假说被有条件地接受。提出假说通常需要有创造性的洞察力。</p>
+</div>
+</section>
+<!-- Page 9 -->
+<section class="pdf-page" id="page-9">
+<div class="page-meta">Page 9</div>
+<div class="sidebar" style="background: #fff; border: 1px solid #ddd;">
+<div style="float: left; width: 60%;">
+<h3>生物学家是怎样工作的</h3>
+<h4>应允</h4>
+<p>11 月的深秋，夜晚孤独寂静，<br/>伫立路旁几乎凝固的银杏，<br/>忽然纷纷洒路身上的树叶，<br/>无雨无风，仿佛是时机已定。</p>
+<p>黄绿斑驳的树叶撒满草坪，<br/>而在昨天，它们挂在枝头如小扇在空中闪烁。<br/>是星星发出什么信号？还是知觉有何深意？<br/>或许是树干内部有什么动机决定？</p>
+<p>... (Poem continues) ...</p>
+<p style="text-align: right;">霍华德 (Howard Nemerov)</p>
+</div>
+<img alt="Image Region: Silver Tree (Ginkgo)" src="01/01_P9_1.jpg" style="float: right; width: 35%; height: 200px;"/>
+<div style="clear: both;"></div>
+<p class="caption" style="text-align: right; width: 35%; float: right;">图 1.A 银杏树</p>
+<div style="clear: both;"></div>
+<p>这个简单的银杏树实验，显示了科学研究的基本过程：科学不是来证明某些解释是正确的，而是证明其他解释是错误的。与实验现象不符的假设被淘汰，未被实验证伪的假设，则暂时认为是接受的。</p>
+</div>
+<h2>1.3 达尔文研究并提出进化论的过程是科学研究的经典案例</h2>
+<h3>1.3.1 达尔文的进化论</h3>
+<p>达尔文的进化论解释和描述了地球上的生物如何随着时间发生变化，并获得各种各样的新特征。这个著名的理论是一个极好的例子，告诉我们科学家怎样提出假说，科学理论怎样发展并被接受。</p>
+<img alt="Image Region: Charles Darwin Photo" src="01/01_P9_2.jpg" style="height: 250px; width: 30%; float: right; margin-left: 15px;"/>
+<p class="caption" style="float: right; width: 30%; text-align: right;"><strong>图 1.5 查尔斯·达尔文</strong> 这张新近发现的照片拍摄于 1881 年，也就是达尔文去世的前一年，可能是这位伟大的生物学家生前最后一张照片。</p>
+<p>查尔斯·罗伯特·达尔文 (Charles Robert Darwin, 1809—1882; 图 1.5) 是一位英国的博物学家，他经过 30 年的观察和研究，终于写出了一部著名的具有空前影响力的著作——《物种起源》。《物种起源》（《自然选择引起的物种起源》或《生存斗争使适威物种保留》）的出版引起轰动，书中阐述的达尔文思想从此主导了人类思想进程。</p>
+</section>
+<!-- Page 10 -->
+<section class="pdf-page" id="page-10">
+<div class="page-meta">Page 10</div>
+<img alt="Map: Voyage of the H.M.S. Beagle (South America, Africa, Australia)" src="01/01_P10_1.jpg" style="height: 400px; width: 100%;"/>
+<p class="caption"><strong>图 1.6 H.M.S. 贝格尔号 5 年的航线</strong> 大部分的时间都用于勘测南美洲的海岸线以及周边的岛屿，比如加拉帕戈斯群岛。达尔文对加拉帕戈斯群岛上动物的研究为他日后提出自然选择导致进化的理论奠定了重要基础。</p>
+<img alt="Diagram: Cross-section of H.M.S. Beagle" src="01/01_P10_2.jpg" style="height: 200px; width: 100%; margin-top: 30px;"/>
+<p class="caption"><strong>图 1.7 贝格尔号纵剖面图</strong> 这艘重 242 吨，长 27.45 m (90 英尺) 的双桅船配备了十门火炮，搭载了 74 名船员！第一次见到这艘船之后，达尔文在给他的同事 Henslow 教授的信中写道：“真渴望拥有更多的空间。”</p>
+</section>
+<!-- Page 11 -->
+<section class="pdf-page" id="page-11">
+<div class="page-meta">Page 11</div>
+<h3>1.3.2 达尔文的证据</h3>
+<p>在达尔文的时代，有关进化的学说未被接受的最大障碍之一是当时人们普遍相信的一种错误观点——地球只有几千年的历史，达尔文时代陆续发现的一些证据使这种观点越来越站不住脚。达尔文在航行期间仔细阅读了伟大的地质学家查尔斯·莱尔 (Charles Lyell, 1797—1875) 的著作《地质学原理》(Principles of Geology, 1830)，书中第一次简要地描述了远古世界的动植物变迁，在这个世界中，不断地有物种逐渐灭绝，同时又有新物种出现，这就是达尔文想要解释的世界。</p>
+<div class="sidebar">
+<h4>表 1.1 达尔文关于进化发生的证据</h4>
+<ol>
+<li><strong>化石</strong> (1) 已经灭绝的物种，比如图 1.8 中的犰狳化石，与至今仍生活在同一地区的生物非常相似，说明其中一种是由另一种发展而来。(2) 在不同时代形成的岩层中，物种特征随时间循序渐进的变化过程可以在化石中见到。</li>
+<li><strong>地理分布</strong> (1) 具有相似气候的地区：比如澳大利亚、南非、加利福尼亚和智利，具有不相干的植物和动物种类，这说明物种的分布并不是完全受气候和环境的影响。(2) 不同大陆上的植物和动物种类是各有特色的：举例来说，南美洲所有的啮齿类动物单独属于一个类群，结构上与豚鼠相似，而别的方发现的啮齿类动物则属于另一个类群。</li>
+<li><strong>海岛</strong> (1) 虽然海岛上的物种不多，它们只要存在就一定是独特的（特有种），并且互相之间会表现出某种联系，比如加拉帕戈斯群岛上的龟。(2) 海岛上的物种与邻近的陆地有着很密切的亲缘关系。</li>
+</ol>
+</div>
+<img alt="Image Region: Glyptodon and Armadillo comparison" src="01/01_P11_1.jpg" style="height: 250px; width: 100%;"/>
+<p class="caption"><strong>图 1.8 进化的化石证据</strong> 现已灭绝的雕齿兽 glyptodont (a) 是一种重达 2000 kg 的南美犰狳，比平均重 4.5 kg 的现代犰狳 (b) 要大得多（本图未按比例绘制）。</p>
+</section>
+<!-- Page 12 -->
+<section class="pdf-page" id="page-12">
+<div class="page-meta">Page 12</div>
+<h3>1.3.3 自然选择学说的创立</h3>
+<p>观察到进化的存在是一回事，但是确确实实地明白它到底是怎样发生的又是另一回事。达尔文的伟大成就就在于他阐述了那个著名的假说：自然选择导致了进化。</p>
+<h4>1) 达尔文与马尔萨斯</h4>
+<p>对达尔文观点的形成至关重要的是他对托马斯·马尔萨斯 (Thomas Malthus) 的《人口论》(Essay on the Principle of Population, 1798) 的研究。在这本书中，马尔萨斯指出植物和动物（包括人类）的数量会呈现几何增长，而人类增加食物供应的能力只能呈算术增长。</p>
+<img alt="Chart: Geometric vs Arithmetic Growth" src="01/01_P12_1.jpg" style="height: 300px; width: 60%; margin: 0 auto;"/>
+<p class="caption"><strong>图 1.9 几何增长和算术增长过程</strong> 几何增长过程是按一个固定的因数而增长，而算术增长过程是按一个固定的差额而增长。马尔萨斯主张人口的增长曲线是几何增长，而人类的食物生产曲线却是算术增长。你能看出这种区别将要引发的危机吗？</p>
+<div class="quote-box">
+            "Can we doubt ... that individuals having any advantage, however slight, over others, would have the best chance of surviving and procreating their kind? On the other hand, we may feel sure that any variation in the least degree injurious would be rigidly destroyed. This preservation of favorable variations, I call Natural Selection."
+        </div>
+<p class="caption"><strong>图 1.10 查尔斯·达尔文《物种起源》摘录</strong> “我们怎能怀疑……那些比其他的个体具有微弱优势的个体，会有更好的生存和繁殖后代的机会？另一方面，我们可以肯定，任何最小程度上的有害变异都会被严格地消灭。我把这种保存有益变异的过程称为自然选择。”</p>
+</section>
+<!-- Page 13 -->
+<section class="pdf-page" id="page-13">
+<div class="page-meta">Page 13</div>
+<h4>2) 自然选择</h4>
+<p>达尔文对家养动物的变异非常熟悉，他的《物种起源》就以对家鸽饲养的细致入微的讨论作为开场。他懂得饲养者通过选育鸽子或狗等其他动物的某些变异，来产生出某些特征，达尔文把这种过程称为人工选择 (artificial selection)。达尔文同时发现，驯养品种之间这些特意造成的差别，常比那些野生品种间的差别大。这种关系使达尔文想到，进化改变在自然界也会发生。可以肯定，如果鸽子饲养者可以通过“人工选择”培育出某个品种，大自然也一定能够做到相同的事情，在选择下一代的过程中扮演饲养者的角色——这个过程被达尔文称为自然选择 (natural selection)。</p>
+<h4>3) 达尔文起草著作大纲</h4>
+<p>达尔文的自然选择导致进化的学说的大纲，在 1842 年就已完成了初稿，但是在把它手稿给他几个要好的科学家朋友看过以后，达尔文却把它收在抽屉里。在此后的 16 年里，他转而研究别的项目。</p>
+<h4>4) 华莱士持有相同的观点</h4>
+<p>刺激达尔文最终出版他的理论的是他在 1858 年收到的一篇短文。一位年轻的英国博物学家阿尔弗莱德·罗素·华莱士 (Alfred Russel Wallace, 1823—1913) 从马来西亚把这篇文章寄给达尔文，文章中简要地提出了华莱士自己独创的理论：自然选择导致进化。像达尔文一样，华莱士也受了马尔萨斯 1798 年文章的很大影响。</p>
+<h4>5) 达尔文理论的发表</h4>
+<p>达尔文的著作在 1859 年 11 月面世，立刻引起了轰动。人类与猿具有共同祖先的暗示，使许多人感到深深的不安 (图 1.11)。</p>
+<img alt="Image: Caricature of Darwin as an ape" src="01/01_P13_1.jpg" style="height: 300px; width: 40%; float: right;"/>
+<div style="clear: both;"></div>
+<p class="caption" style="text-align: right; width: 40%; float: right;"><strong>图 1.11 达尔文向他的猴子祖先请安</strong> 当时，达尔文经常被毫不留情地描绘成圆滑的样子，此画发表于 1874 年。</p>
+</section>
+<!-- Page 14 -->
+<section class="pdf-page" id="page-14">
+<div class="page-meta">Page 14</div>
+<h3>1.3.4 达尔文之后的进化论：更多证据</h3>
+<p>从 1882 年达尔文去世至今的一个多世纪的时间里，支持达尔文理论的证据越来越多。同时，我们对于进化原理的理解也有了许多重大的进展。</p>
+<h4>1) 化石记录</h4>
+<p>达尔文预言，化石记录中将存在生物大类群之间的过渡类型，比如鱼类与被认为起源于鱼类的两栖类，以及爬行动物与鸟类。我们今天对于化石记录的认识在 19 世纪还是不可想象的，最近发现的显微化石把地球上生命的历史向前推进到 35 亿年前。</p>
+<h4>2) 地球的年龄</h4>
+<p>在达尔文的时代，一些物理学家固执地认为地球只有几千年的历史。这使达尔文非常苦恼，因为从某个起始的祖先进化出所有的生物，需要比这长得多的时间。运用研究放射性衰变的速率得来的证据，我们现在知道达尔文时代的物理学家错了，而且是大错特错了：地球大约形成于 45 亿年以前。</p>
+<h4>3) 遗传机制</h4>
+<p>在遗传学领域，达尔文受到了最尖锐的批评。在当时，没有人懂得基因或者遗传的原理，所以达尔文自然也不可能完全解释进化发生的原理。</p>
+<h4>4) 比较解剖学</h4>
+<p>对动物的比较研究为达尔文的理论提供了强有力的证据。比如，很多不同种类的脊椎动物体内都存在相同的骨头，暗示了它们的进化渊源。图 1.12 中所示的前肢在结构上都呈现相同的骨骼排列方式，这种排列在蝙蝠的翼中以一种方式变化，在海豚的鳍中以另一种方式变化，而在马腿中又是别的方式。这些骨骼在不同的脊椎动物中被称为同源的 (homologous)，也就是说它们有着相同的进化起源，但现在却在结构和功能上表现出差异。与之相对的是同功 (analogous) 结构，比如鸟的翅膀和蝴蝶的翅膀，虽然有着相似的结构和功能，但起源却不相同。</p>
+<img alt="Image Region: Homologous structures (Human, Cat, Bat, Porpoise, Horse limbs)" src="01/01_P14_1.jpg" style="height: 300px; width: 100%;"/>
+<p class="caption"><strong>图 1.12 脊椎动物前肢的同源性</strong> 这 5 种脊椎动物的前肢显示出前肢骨骼相互关联的部分在不同的动物中如何演化。</p>
+</section>
+<!-- Page 15 -->
+<section class="pdf-page" id="page-15">
+<div class="page-meta">Page 15</div>
+<div class="sidebar">
+<h3>为什么要研究化石?</h3>
+<p><strong>Stephen Jay Gould (哈佛大学)</strong></p>
+<img alt="Image: Stephen Jay Gould" src="01/01_P15_1.jpg" style="float: right; width: 30%; height: 150px;"/>
+<p>我在纽约市的街区长大，生在那种属于谦和而缺少正规教育却有着对学习强烈热爱的家庭... 我一直专注于古生物学，是因为我在孩提时代就发现那是一个奇迹，那个科学史上最伟大的革命性发现之一。我懂得了那些恐龙，以及地球上所有的曾经生活过的生物，都被大自然的巨大力量联系在一起，地质时代数十亿年间生命的丰富而迷人的变化，是通过进化转变的自然过程...</p>
+</div>
+<h2>1.4 本书将帮助你系统地学习生物学</h2>
+<h3>1.4.1 生物学的核心理论</h3>
+<p>几个世纪以来对生物的观察和研究，产生了一个生物界的组织原则：生物物种的多样性反映了生命史，一部分可以追溯到地球诞生的初期，交织着成功、失败的变迁。对生命多样性的解释，即基于自然选择的进化理论，将成为你学习生物科学的主线，就像共价键理论是学习化学的主线，而量子力学是物理的主线一样，基于自然选择的进化，将贯穿你将要在本书中学到的一切内容。</p>
+</section>
+<!-- Page 16 -->
+<section class="pdf-page" id="page-16">
+<div class="page-meta">Page 16</div>
+<p>生物与环境之间如何相互作用，从而产生出地球生物所特有的复杂群落。</p>
+<h4>2) 生物体</h4>
+<p>本书的后半部分着重研究进化的产物——生物体。估计现存至少有 500 万种不同的植物、动物和微生物，而它们的多样性是令人难以置信的 (图 1.13)。在本书稍后部分，我们会着重讨论脊椎动物（我们也是这个家族的成员）的机体及其功能，这是大部分学生最感兴趣也是最为重要的部分。</p>
+<p>随着你学习本书，你对一个层次的了解将会是了解下一个层次的工具。生物学的核心理论，就是生物物种的多样性是漫长的进化过程的结果。</p>
+<img alt="Image Region: 6 Kingdoms Diagram (Plants, Animals, Fungi, Protists, Archaea, Bacteria)" src="01/01_P16_1.jpg" style="height: 500px; width: 100%; aspect-ratio: 1/1;"/>
+<p class="caption"><strong>图 1.13 生物的多样性</strong> 生物学家把所有的生物分为 6 大类，称为 6 界：古细菌界、真细菌界、原生生物界、真菌界、植物界和动物界。</p>
+<p style="text-align: right; font-size: 0.8em;">(张璋 陈洪涛 佟向军 译校)</p>
+</section>
+<!-- Page 17 -->
+<section class="pdf-page" id="page-17">
+<div class="page-meta">Page 17</div>
+<table style="width: 100%; border: none;">
+<tr style="vertical-align: top;">
+<td style="width: 33%; border: none; padding-right: 20px;">
+<h3>小 结</h3>
+<h4>1.1 生物学是生命的科学</h4>
+<ul>
+<li>不论是单细胞还是多细胞生物，它们都具有高度的有序性，并具有不同的等级层次。</li>
+</ul>
+<h4>1.2 科学家在观察中总结和概括</h4>
+<ul>
+<li>科学就是从观察和实验中总结出普遍规律的过程。</li>
+<li>科学通过对照实验从众多的假说中淘汰那些与事实不符的假说，最终选出最具可能性的假说。</li>
+<li>有一整套证据支持的互相关联的一组假说叫做理论。</li>
+</ul>
+</td>
+<td style="width: 33%; border: none; padding-right: 20px;">
+<h3>问 题</h3>
+<ol>
+<li>生物体的基本特征有哪些？</li>
+<li>演绎推理与归纳推理之间的区别是什么？什么是假说？</li>
+<li>什么是变量？对照实验怎样检验假说？</li>
+<li>假说怎样成为理论？理论会因情况下就成为了绝对的真理，而不再具有任何不确定性？</li>
+<li>基础研究和应用研究之间的区别是什么？</li>
+</ol>
+</td>
+<td style="width: 33%; border: none;">
+<h3>媒体资源</h3>
+<ul style="list-style: none; padding: 0;">
+<li style="margin-bottom: 10px;"><strong>实践活动：</strong><br/>生物体的组织性</li>
+<li style="margin-bottom: 10px;"><strong>科学家视角：</strong><br/>为什么研究古生物学？<br/>科学家如何思考：<br/>生物学中的假说检验</li>
+<li style="margin-bottom: 10px;"><strong>技能测验：</strong><br/>科学方法</li>
+<li style="margin-bottom: 10px;"><strong>进化导论：</strong><br/>达尔文以前<br/>贝格尔号的旅行<br/>自然选择</li>
+</ul>
+</td>
+</tr>
+</table>
+</section>
+</body>
+</html>
